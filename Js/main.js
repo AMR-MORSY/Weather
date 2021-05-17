@@ -13,7 +13,7 @@ let currentLocation = [];
 let forcast = [];
 
 async function getWeather(city) {
-    let httpRequest = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=df8286397f2b4467b19224648210605&q=${city}&days=3`);
+    let httpRequest = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=df8286397f2b4467b19224648210605&q=${city}&days=3`);
 
 
     let httpResponse = await httpRequest.json();
